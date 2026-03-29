@@ -1,0 +1,123 @@
+body {
+    background-color: #8c9686;
+    position: relative;
+}
+
+.container {
+    margin: auto;
+    position: relative;
+    width: 804px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+    color: #885050;
+}
+
+.cards {
+    width: 530px;
+    height: 200px;
+    padding: 10px;
+    background-color: rgba(226, 205, 137, 0.452);
+    border: 2px solid rgb(151, 122, 102);
+    border-radius: 30px;
+}
+
+.card-box {
+    display: flex;
+    gap: 10px;
+}
+
+.card {
+    position: relative;
+    width: 48px;
+    height: 48px;
+    background-color: #ffffff;
+    background-color: rgba(226, 205, 137, 0.452);
+}
+
+.card-amex {
+    background-image: url(../img/amex.png);
+}
+
+.card-discover {
+    background-image: url(../img/discover.png);
+}
+
+.card-jcb {
+    background-image: url(../img/jcb.png);
+}
+
+.card-maestro {
+    background-image: url(../img/maestro.webp);
+    background-size: cover;
+}
+
+.card-union-pay {
+    background-image: url(../img/unionpay.png);
+}
+
+.card-visa {
+    background-image: url(../img/visa.png);
+}
+
+.card-mir {
+    background-image: url(../img/mir.png);
+    background-size: cover;
+}
+
+.card-uatp {
+    background-image: url(../img/uatp.png);
+    background-size: cover;
+}
+
+.card-master-card {
+    background-image: url(../img/mastercard.png);
+    background-size: cover;
+}
+
+.card-dark {
+    position: absolute;
+    background-color: rgba(3, 3, 0, 0.452);
+    opacity: 1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.input {
+    margin: 10px 0;
+    height: 20px;
+}
+
+.btn {
+    margin-left: 10px;
+    font-size: 14 px;
+    font-family: Arial, sans-serif;
+    color: #885050;
+}
+
+.error-no-value {
+    width: 200px;
+    background-color: #948c60;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    color: #f30606;
+    border: 2px solid rgb(148, 189, 216);
+
+}
+
+.correct-pay, .correct-number {
+    width: 200px;
+    background-color: #948c60;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    color: #012714;
+    border: 2px solid rgb(148, 189, 216);
+}
