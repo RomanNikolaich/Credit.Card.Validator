@@ -25,7 +25,7 @@ describe('test of formValidity', () => {
         document.body.innerHTML = "";
     });
 
-    test('test of formValidity', () => {
+    test('of formValidity', () => {
         render.renderCardBox(cardClasses);
 
         expect(input).toBeTruthy();

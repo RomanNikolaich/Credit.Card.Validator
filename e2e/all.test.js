@@ -31,6 +31,7 @@ describe('Page 1', () => {
 
     test('testing selector .cards', async () => {
         await page.waitForSelector('.cards');
+        expect(!!page).toBe(true);
     }, 10000);
 
     test('testing form visa', async () => {
@@ -41,6 +42,7 @@ describe('Page 1', () => {
         await form.waitForSelector('.correct-pay');
         await form.waitForSelector('.error-no-value');
         const visa = await form.$('.card-visa');
+        expect(!!visa).toBe(true);
         await visa.waitForSelector('.card-dark', { hidden: true });
     }, 50000);
 
@@ -55,6 +57,7 @@ describe('Page 1', () => {
         await form.waitForSelector('.error-no-value', { hidden: true });
         await form.waitForSelector('.correct-number');
         const master = await form.$('.card-master-card');
+        expect(!!master).toBe(true);
         await master.waitForSelector('.card-dark', { hidden: true });
     }, 50000);
 
@@ -69,6 +72,7 @@ describe('Page 1', () => {
         await form.waitForSelector('.error-no-value', { hidden: true });
         await form.waitForSelector('.correct-number');
         const mir = await form.$('.card-mir');
+        expect(!!mir).toBe(true);
         await mir.waitForSelector('.card-dark', { hidden: true });
     }, 50000);
 
@@ -83,8 +87,10 @@ describe('Page 1', () => {
         await form.waitForSelector('.error-no-value');
         await form.waitForSelector('.correct-number', { hidden: true });
         const jsb = await form.$('.card-jcb');
+        expect(!!jsb).toBe(true);
         await jsb.waitForSelector('.card-dark', { hidden: true });
         const amEx = await form.$('.card-amex');
+        expect(!!amEx).toBe(true);
         await amEx.waitForSelector('.card-dark', { hidden: true });
     }, 50000);
 
@@ -99,6 +105,7 @@ describe('Page 1', () => {
         await form.waitForSelector('.error-no-value', { hidden: true });
         await form.waitForSelector('.correct-number');
         const uatp = await form.$('.card-uatp');
+        expect(!!uatp).toBe(true);
         await uatp.waitForSelector('.card-dark', { hidden: true });
     }, 50000);
 
@@ -112,10 +119,13 @@ describe('Page 1', () => {
         await form.waitForSelector('.error-no-value', { hidden: true });
         await form.waitForSelector('.correct-number');
         const discover = await form.$('.card-discover');
+        expect(!!discover).toBe(true);
         await discover.waitForSelector('.card-dark', { hidden: true });
         const unionPay = await form.$('.card-union-pay');
+        expect(!!unionPay).toBe(true);
         await unionPay.waitForSelector('.card-dark', { hidden: true });
         const maestro = await form.$('.card-maestro');
+        expect(!!maestro).toBe(true);
         await maestro.waitForSelector('.card-dark', { hidden: true });
 
     }, 50000);

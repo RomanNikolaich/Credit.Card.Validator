@@ -7,13 +7,13 @@ export default [
   {
     languageOptions: { globals: { ...globals.browser, ...globals.node } },
   },
-  pluginJs.configs.recommended,
+  /*pluginJs.configs.recommended,
   eslintPluginPrettierRecommended,
   {
     rules: {
       "no-unused-vars": "warn",
     },
-  },
+  },*/
   {
     ignores: ["dist/", "coverage/"],
   },

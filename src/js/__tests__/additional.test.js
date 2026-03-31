@@ -23,7 +23,7 @@ describe("test of renderOneCard", () => {
 
     }, 10000);
 
-    test('test of renderCardBox', () => {
+    test('of renderCardBox', () => {
         const cardBox = renderCardBox(clases);
         expect(cardBox).toBeTruthy();
         expect(cardBox.children.length).toBe(9);

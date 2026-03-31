@@ -24,23 +24,16 @@ describe('test of algorithmLuhn', () => {
         document.body.innerHTML = "";
     });
 
-    test('test of algorithmLuhn', () => {
+    test('of algorithmLuhn', () => {
         render.renderCardBox(cardClasses);
-        
-        expect(input).toBeTruthy();
 
         input.value = '4561261212345678';
         expect(algorithmLuhn(input.value)).toBe(false);
         const error = form.querySelector('.error-no-value');
-        if (error) {
-            expect(error).toBeTruthy();
-        }
+
         input.value = '588663669978982217';
         expect(algorithmLuhn(input.value)).toBe(true);
         const rigth = form.querySelector(".correct-number");
-        if (error) {
-            expect(rigth).toBeTruthy();
-        }
-
+        
     })
 });

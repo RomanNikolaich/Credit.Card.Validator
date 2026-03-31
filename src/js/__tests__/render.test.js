@@ -22,7 +22,7 @@ describe("render component", () => {
     document.body.innerHTML = "";
   });
 
-  test("test of constructor", () => {
+  test("of constructor", () => {
     expect(form).toBeTruthy();
     expect(form.noValidate).toBe(true);
 
@@ -102,7 +102,7 @@ describe("render component", () => {
     
   }, 10000);
 
-  test("test of renderNotification", () => {
+  test("of renderNotification", () => {
     render.renderNotification('correct-pay', `Платежная система Visa`);
     const correctPay = form.querySelector('.correct-pay');
     expect(correctPay).toBeTruthy();

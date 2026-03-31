@@ -29,56 +29,56 @@ describe('test of paymentSystem', () => {
         document.body.innerHTML = "";
     });
 
-    test('test of visa', () => {
+    test('of visa', () => {
         render.renderCardBox(cardClasses);
         expect(input).toBeTruthy();
         input.value = '4561261212345678';
         expect(paymentSystem(input.value)).toStrictEqual(['card-visa']);
     });
 
-    test('test of master', () => {
+    test('of master', () => {
         render.renderCardBox(cardClasses);
         expect(input).toBeTruthy();
         input.value = '588663669978982217';
         expect(paymentSystem(input.value)).toStrictEqual(['card-master-card']);
     });
 
-    test('test of mir', () => {
+    test('of mir', () => {
         render.renderCardBox(cardClasses);
         expect(input).toBeTruthy();
         input.value = '92458896552211331';
         expect(paymentSystem(input.value)).toStrictEqual(['card-mir']);
     });
 
-    test('test of am-ex and jcb', () => {
+    test('of am-ex and jcb', () => {
         render.renderCardBox(cardClasses);
         expect(input).toBeTruthy();
         input.value = '32458896552211331';
         expect(paymentSystem(input.value)).toStrictEqual(['card-amex', 'card-jcb']);
     });
 
-    test('test of uatp', () => {
+    test('of uatp', () => {
         render.renderCardBox(cardClasses);
         expect(input).toBeTruthy();
         input.value = '13866366997244';
         expect(paymentSystem(input.value)).toStrictEqual(['card-uatp']);
     });
 
-    test('test of card-discover, card-union-pay and card-maestro', () => {
+    test('of card-discover, card-union-pay and card-maestro', () => {
         render.renderCardBox(cardClasses);
         expect(input).toBeTruthy();
         input.value = '638663669972452';
         expect(paymentSystem(input.value)).toStrictEqual(['card-discover', 'card-union-pay', 'card-maestro']);
     });
 
-    test('test of empty', () => {
+    test('of empty', () => {
         render.renderCardBox(cardClasses);
         expect(input).toBeTruthy();
         input.value = '';
         expect(paymentSystem(input.value)).toStrictEqual([]);
     });
 
-    test('test of other', () => {
+    test('of other', () => {
         render.renderCardBox(cardClasses);
         expect(input).toBeTruthy();
         input.value = '838663669972452';
